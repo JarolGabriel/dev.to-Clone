@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*para ponerle bullet alos li en la pagina de login*/
+.custom-bullets li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.custom-bullets li::before {
+  content: "•";
+  color: grey;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* styles.css para los icom de id de la card */
+.custom-icon {
+  font-weight: bold; /* Estilo para el peso de la fuente */
+}
