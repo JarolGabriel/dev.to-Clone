@@ -33,12 +33,12 @@ export default function PostDetail() {
               </div>
             </div>
             {/**div de la card del medio */}
-            <div className="flex-none w-full sm:w-7/12 p-4 border border-gray-300 rounded-lg bg-white">
+            <div className="flex-none w-full sm:w-7/12 p-4 border border-gray-300 rounded-lg bg-white mt-14">
               <div className="relative w-full">
                 {post.image ? (
                   <div>
-                    <image
-                      src={post.image}
+                    <Image
+                      src={post.image || "/Screenshot2024-05-27095220.png"}
                       className="w-full h-full object-cover rounded-lg "
                       width={1000}
                       height={417}
@@ -146,9 +146,11 @@ export default function PostDetail() {
                   <div className="flex justify-around">
                     <div className="">
                       <image
-                        src="https://media.dev.to/cdn-cgi/image/width=320,height=320,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F634%2F9411160e-e40d-4746-9e3f-83f570c9b166.png"
+                        src="/public/original_logo.png"
                         alt=""
                         className="w-6 rounded-lg"
+                        width={30}
+                        height={30}
                       />
                     </div>
                     <div>
@@ -166,11 +168,11 @@ export default function PostDetail() {
                 </div>
                 <div>
                   <image
-                    src="https://media.dev.to/cdn-cgi/image/width=350%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fy8d749pnce07k123yeh8.png"
+                    src={"/public/Screenshot 2024-09-20 122517.png"}
                     alt=""
                     className="rounded-lg"
-                    width={1000}
-                    height={417}
+                    width={20}
+                    height={20}
                   />
                 </div>
                 <h1 className="font-bold text-xl mt-2 ">

@@ -2,8 +2,23 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["randomuser.me"],
-    domains: ["randomuser.me", "media.dev.to"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "randomuser.me",
+        pathname: "/api/**",
+      },
+      {
+        protocol: "https",
+        hostname: "media.dev.to",
+        pathname: "/cdn-cgi/image/**",
+      },
+      {
+        protocol: "https",
+        hostname: "example.com",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

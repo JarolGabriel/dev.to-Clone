@@ -29,8 +29,8 @@ export default function PostCard({
             src={img}
             alt={nameAutor}
             className="w-10 object-cover rounded-full mr-1 "
-            width={1000}
-            height={417}
+            width={40}
+            height={40}
           />
           <div className="">
             <h2 className="text-base font-semibold text-gray-600 cursor-pointer py-1 px-2 inline-block rounded-lg hover:bg-gray-100">
