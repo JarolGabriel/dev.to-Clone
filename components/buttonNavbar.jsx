@@ -2,6 +2,7 @@ import { useUser } from "@/context/userContext";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import ProfileCard from "./cardLogout";
+import Image from "next/image";
 
 export default function ButtonNanbvar({ style, style2, style3 }) {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -66,10 +67,13 @@ export default function ButtonNanbvar({ style, style2, style3 }) {
         {isAuthenticated && user && (
           <div className=" sm:flex justify-center items-center space-x-2 cursor-pointer pr-3 hidden">
             <i className=" bi-bell text-3xl ml-1 hover:bg-morado-azulado-claro py-1 px-2 rounded-lg"></i>
-            <img
+            <Image
               src={user.user.profilePic}
               className="h-8 w-8 rounded-full hover:border-2 hover:border-gray-300 "
               onClick={toggleProfileCard}
+              width={40}
+              height={40}
+              alt=""
             />
           </div>
         )}

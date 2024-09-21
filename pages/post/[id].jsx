@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { usePost } from "@/hooks/usePost";
 import { formatPostDate } from "@/hooks/formatodehora";
 import AsideDerecho from "@/components/asideDerecho";
+import Image from "next/image";
 
 export default function PostDetail() {
   const router = useRouter();
@@ -36,19 +37,24 @@ export default function PostDetail() {
               <div className="relative w-full">
                 {post.image ? (
                   <div>
-                    <img
+                    <image
                       src={post.image}
                       className="w-full h-full object-cover rounded-lg "
+                      width={1000}
+                      height={417}
+                      alt=""
                     />
                   </div>
                 ) : null}
               </div>
               <div className="flex flex-col justify-start items-start ">
                 <div className="flex items-center mt-4 mb-4">
-                  <img
+                  <image
                     src={post.author.profilePic}
                     alt={post.author.name}
                     className="w-10 object-cover rounded-full mr-1"
+                    width={40}
+                    height={40}
                   />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-600 cursor-pointer py-1 px-2 inline-block rounded-lg hover:bg-gray-100">
@@ -99,10 +105,12 @@ export default function PostDetail() {
             <div className="flex-none w-full sm:w-3/12 sm:block hidden">
               <div className="border h-60 rounded-xl px-3 bg-white">
                 <div className=" flex items-center mt-5 ">
-                  <img
+                  <image
                     src={post.author.profilePic}
                     alt={post.author.name}
                     className="w-14 object-cover rounded-full ml-4"
+                    width={40}
+                    height={40}
                   />
                   <div>
                     <h3 className="text-xl font-semibold text-gray-600 cursor-pointer px-2 inline-block rounded-lg hover:text-morado-azulado">
@@ -137,7 +145,7 @@ export default function PostDetail() {
                 <div className="flex mt-3">
                   <div className="flex justify-around">
                     <div className="">
-                      <img
+                      <image
                         src="https://media.dev.to/cdn-cgi/image/width=320,height=320,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F634%2F9411160e-e40d-4746-9e3f-83f570c9b166.png"
                         alt=""
                         className="w-6 rounded-lg"
@@ -157,10 +165,12 @@ export default function PostDetail() {
                   </div>
                 </div>
                 <div>
-                  <img
+                  <image
                     src="https://media.dev.to/cdn-cgi/image/width=350%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fy8d749pnce07k123yeh8.png"
                     alt=""
                     className="rounded-lg"
+                    width={1000}
+                    height={417}
                   />
                 </div>
                 <h1 className="font-bold text-xl mt-2 ">

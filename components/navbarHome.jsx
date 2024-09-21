@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import ButtonNanbvar from "./buttonNavbar";
 import AsideBarIzquierdo from "./asideBarIzquierdo";
+import Image from "next/image";
 
 export default function NavbarHome() {
   const {
@@ -40,10 +41,12 @@ export default function NavbarHome() {
               className="bi-list block sm:hidden text-3xl mr-3 cursor-pointer"
               onClick={toggleAsideMenu}
             ></i>
-            <img
+            <Image
               src="/original_logo.png"
               alt=""
               className="w-[50px] h-[45px] cursor-pointer object-contain sm:mr-4 m-auto"
+              width={40}
+              height={40}
             />
             <div className="flex relative w-full ">
               <input

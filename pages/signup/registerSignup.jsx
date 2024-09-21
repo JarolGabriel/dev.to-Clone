@@ -200,7 +200,7 @@ export default function RegisterSignup() {
                   className="form-checkbox h-4 w-4 text-morado-azulado"
                 />
                 <label for="remember" className="text-lg ">
-                  I'm not a robot
+                  Im not a robot
                 </label>
               </div>
             </div>

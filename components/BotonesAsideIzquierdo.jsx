@@ -1,5 +1,5 @@
 import { list3 } from "../lib/array";
-import AsideBarIzquierdo from "./asideBarIzquierdo";
+import Image from "next/image";
 
 export default function BotonesAsideIzquierdo() {
   return (
@@ -17,15 +17,17 @@ export default function BotonesAsideIzquierdo() {
         ))}
       </div>
       <div className="flex flex-col sm:ml-20 m-auto border bg-white rounded-lg px-4 py-4 mt-4">
-        <div className="flex justify-between justify-center">
+        <div className="flex justify-between">
           <p className="text-sm">💎DEV Diamond Sponsors</p>
           <i class="bi bi-three-dots py-1 px-2 hover:bg-gray-100 rounded-lg cursor-pointer"></i>
         </div>
         <p className="font-bold">Thank you to our Diamond Sponsor Neon</p>
-        <img
+        <Image
           src="/Screenshot20atE2AFPM.png"
           alt=""
           className="rounded-lg cursor-pointer"
+          width={652}
+          height={257}
         />
         <p className="italic py-3">
           Neon is the official database partner of DEV
@@ -33,14 +35,16 @@ export default function BotonesAsideIzquierdo() {
         <p>Happy coding ❤️</p>
       </div>
       <div className="flex flex-col sm:ml-20 m-auto border bg-white rounded-lg px-4 py-4 mt-4">
-        <div className="flex justify-between justify-center">
+        <div className="flex justify-between">
           <p className="text-sm">DEV community</p>
           <i class="bi bi-three-dots py-1 px-2 hover:bg-gray-100 rounded-lg cursor-pointer"></i>
         </div>
-        <img
+        <Image
           src="/Screenshot 2024-09-20 122517.png"
           alt=""
           className="rounded-lg cursor-pointer"
+          width={652}
+          height={257}
         />
         <p className="mt-5 font-bold">
           <span className="font-bold text-morado-azulado underline cursor-pointer">

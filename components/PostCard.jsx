@@ -1,5 +1,6 @@
 import { formatPostDate } from "@/hooks/formatodehora";
 import Tags from "./tags";
+import Image from "next/image";
 
 export default function PostCard({
   id,
@@ -16,16 +17,20 @@ export default function PostCard({
   return (
     <div className="flex flex-col items-center ">
       <div className="w-full max-w-[721px] min-h-[195px] p-4 border border-gray-300 rounded-lg bg-white">
-        <img
+        <Image
           src={imagenPortada}
           alt=""
           className="w-full h-full object-cover rounded-lg pb-5"
+          width={1000}
+          height={417}
         />
         <div className="flex items-start">
-          <img
+          <Image
             src={img}
             alt={nameAutor}
             className="w-10 object-cover rounded-full mr-1 "
+            width={1000}
+            height={417}
           />
           <div className="">
             <h2 className="text-base font-semibold text-gray-600 cursor-pointer py-1 px-2 inline-block rounded-lg hover:bg-gray-100">
