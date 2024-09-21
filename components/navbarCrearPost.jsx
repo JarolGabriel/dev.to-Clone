@@ -5,12 +5,10 @@ export default function NavarCreatePost() {
   return (
     <nav className="flex items-center justify-evenly px- py-2">
       <div className="sm:flex items-center space-x-4 hidden">
-        <Image
+        <img
           src="/original_logo.png"
           alt=""
           className="w-[50px] cursor-pointer"
-          width={50}
-          height={50}
         />
         <p className="font-semibold ">Create Post</p>
       </div>

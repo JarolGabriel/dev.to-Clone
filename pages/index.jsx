@@ -101,11 +101,7 @@ export default function ListPost({ posts }) {
                   posts.map((post, id) => (
                     <PostCard
                       key={id}
-                      imagenPortada={
-                        id === 0
-                          ? post.image
-                          : "/Screenshot2024-05-27095220.png"
-                      }
+                      imagenPortada={id === 0 ? post.image : null}
                       img={post.author.profilePic}
                       nameAutor={post.author.name}
                       date={post.createdAt}

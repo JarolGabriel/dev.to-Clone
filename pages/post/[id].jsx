@@ -37,24 +37,20 @@ export default function PostDetail() {
               <div className="relative w-full">
                 {post.image ? (
                   <div>
-                    <Image
+                    <img
                       src={post.image || "/Screenshot2024-05-27095220.png"}
                       className="w-full h-full object-cover rounded-lg "
-                      width={1000}
-                      height={417}
                       alt=""
                     />
                   </div>
                 ) : null}
               </div>
-              <div className="flex flex-col justify-start items-start ">
+              <div className="flex flex-col justify-start items-start">
                 <div className="flex items-center mt-4 mb-4">
-                  <image
+                  <img
                     src={post.author.profilePic}
                     alt={post.author.name}
                     className="w-10 object-cover rounded-full mr-1"
-                    width={40}
-                    height={40}
                   />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-600 cursor-pointer py-1 px-2 inline-block rounded-lg hover:bg-gray-100">
@@ -102,15 +98,13 @@ export default function PostDetail() {
               </div>
             </div>
             {/** lateral derecho about */}
-            <div className="flex-none w-full sm:w-3/12 sm:block hidden">
+            <div className="flex-none w-full sm:w-3/12 sm:block hidden mt-14">
               <div className="border h-60 rounded-xl px-3 bg-white">
                 <div className=" flex items-center mt-5 ">
-                  <image
+                  <img
                     src={post.author.profilePic}
                     alt={post.author.name}
                     className="w-14 object-cover rounded-full ml-4"
-                    width={40}
-                    height={40}
                   />
                   <div>
                     <h3 className="text-xl font-semibold text-gray-600 cursor-pointer px-2 inline-block rounded-lg hover:text-morado-azulado">

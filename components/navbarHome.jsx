@@ -41,12 +41,10 @@ export default function NavbarHome() {
               className="bi-list block sm:hidden text-3xl mr-3 cursor-pointer"
               onClick={toggleAsideMenu}
             ></i>
-            <Image
+            <img
               src="/original_logo.png"
               alt=""
               className="w-[50px] h-[45px] cursor-pointer object-contain sm:mr-4 m-auto"
-              width={40}
-              height={40}
             />
             <div className="flex relative w-full ">
               <input

@@ -13,12 +13,10 @@ export default function Signup() {
     <>
       <div className=" container mx-auto  flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center pt-8">
-          <Image
+          <img
             src="/original_logo.png"
             alt="logo-dev.to"
             className="w-[60px]"
-            width={40}
-            height={40}
           />
           <h1 className="text-3xl font-bold">Join the DEV Community</h1>
           <p className="sm:text-base text-sm text-center">
